@@ -13,12 +13,13 @@ section
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .fire h1
 {
 
     position: relative;
-    font-size: 12em;
+    font-size: 8em;
     z-index: 100;
     background-image: url(../img/fire.jpeg); 
     background-size: cover;
@@ -26,22 +27,22 @@ section
     background-attachment: fixed;
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    font-size: 120px; 
     text-transform: uppercase; 
-    font-weight: 800; 
+    font-weight: 900; 
     -webkit-font-smoothing: antialiased; 
     background-repeat: repeat; 
 }
 .fire .content
 {
-    max-width: 800px;
+    min-width: 320px;
     text-align: center;
+    max-width: 800px;
 }
 .water h1
 {
 
     position: relative;
-    font-size: 12em;
+    font-size: 8em;
     z-index: 100;
     background-image: url(../img/water.jpeg); 
     background-size: cover;
@@ -51,20 +52,21 @@ section
     -webkit-text-fill-color: transparent;  
     font-size: 120px; 
     text-transform: uppercase; 
-    font-weight: 800; 
+    font-weight: 900; 
     -webkit-font-smoothing: antialiased; 
     background-repeat: repeat; 
 }
 .water .content
 {
-    max-width: 800px;
+    min-width: 320px;
     text-align: center;
+    max-width: 800px;
 }
 .rock h1
 {
 
     position: relative;
-    font-size: 12em;
+    font-size: 8em;
     z-index: 100;
     background-image: url(../img/rock.jpeg); 
     background-size: cover;
@@ -74,12 +76,21 @@ section
     -webkit-text-fill-color: transparent; 
     font-size: 120px; 
     text-transform: uppercase; 
-    font-weight: 800; 
+    font-weight: 900; 
     -webkit-font-smoothing: antialiased; 
     background-repeat: repeat; 
 }
 .rock .content
 {
-    max-width: 800px;
+    min-width: 320px;
     text-align: center;
+    max-width: 800px;
+}
+@media (max-width: 450px)
+{
+    .water h1,
+    .rock h1
+    {
+        font-size: 5em;
+    }
 }
